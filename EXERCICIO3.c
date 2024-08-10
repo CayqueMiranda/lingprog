@@ -1,42 +1,22 @@
 #include <stdio.h>
 int main (){
-	int valor, maior, menor;
-	printf ("digite o 1 valor: "); 
-	scanf ("%d", &valor);
-	maior = valor; 
-	menor = valor; 
-	printf ("digite o 2 valor: "); 
-	scanf ("%d", &valor);
-	if (valor > maior){
-		maior = valor; //4
+	float n1, n2, n3, n4, resul;
+	char escolha;
+	printf("Escolha o tipo de media:\n A - Aritimetica\nP - ponderada\nH - harmonica\n");
+	scanf("%c",&escolha);
+	printf("nota 1: ");
+	scanf ("%f", &n1);
+	printf("nota 2: ");
+	scanf ("%f", &n2);
+	printf("nota 3: ");
+	scanf ("%f", &n3);
+	printf("nota 4: ");
+	scanf ("%f", &n4);
+	if(escolha == 'A'){
+		
 	}
-	if (valor < menor){ // 3
-		menor = valor;
-    }
-    printf ("digite o 3 valor: ");
-	scanf ("%d", &valor);
-	if (valor > maior){
-		maior = valor;
-	}
-	if (valor < menor){
-		menor = valor;
-    }
-    printf ("digite o 4 valor: ");
-	scanf ("%d", &valor);
-	if (valor > maior){
-		maior = valor;
-	}
-	if (valor < menor){
-		menor = valor;
-    }
-    printf ("digite o 5 valor: ");
-	scanf ("%d", &valor);
-	if (valor > maior){
-		maior = valor;
-	}
-	if (valor < menor){
-		menor = valor;
-    }
-    printf ("o maior valor eh %d e o menor eh %d", maior, menor);
+	
+	
+	
 	return 0;
 }
